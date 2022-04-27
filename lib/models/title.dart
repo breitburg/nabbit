@@ -1,6 +1,5 @@
 import 'package:nabbit/models/enum.dart';
 import 'package:nabbit/models/ticket.dart';
-import 'package:tint/tint.dart';
 
 class Title {
   final String? name;
@@ -15,7 +14,7 @@ class Title {
 
   factory Title.fromJson(Map<String, dynamic> json) {
     return Title(
-      name: json['name'],
+      name: json['name']?.replaceAll('\n', ' ').replaceAll('Â', ''),
       ticket: Ticket(
         json['titleID'],
         json['titleKey'],
@@ -28,7 +27,5 @@ class Title {
   }
 
   @override
-  String toString() {
-    return name?.replaceAll('\n', ' ') ?? 'undefined';
-  }
+  String toString() => [name ?? 'undefined', '(${region.name})'].join(' ');
 }
