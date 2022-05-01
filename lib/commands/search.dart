@@ -1,7 +1,9 @@
+import 'dart:io';
+
 import 'package:args/command_runner.dart';
 import 'package:nabbit/models/enum.dart';
 import 'package:nabbit/models/storefront.dart';
-import 'package:tint/tint.dart';
+import 'package:nabbit/models/title.dart';
 
 class Search extends Command {
   final Storefront storefront;
@@ -15,7 +17,7 @@ class Search extends Command {
         valueHelp: 'Mario Kart 8',
         mandatory: true,
       )
-      ..addSeparator('Search Options')
+      ..addSeparator('Additional Options')
       ..addOption(
         'region',
         abbr: 'r',
@@ -54,10 +56,7 @@ class Search extends Command {
     );
 
     for (var title in results) {
-      var dot = title.ticket.verified ? '●' : '○';
-
-      print(
-          '${title.ticket.id.dim()} $dot ${title.name!.bold()} (${title.region.name})');
+      stdout.writeln(title.toPrettifiedString());
     }
   }
 }

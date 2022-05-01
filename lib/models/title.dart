@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:nabbit/models/enum.dart';
 import 'package:nabbit/models/ticket.dart';
+import 'package:tint/tint.dart';
 
 class Title {
   final String? name;
@@ -28,4 +31,13 @@ class Title {
 
   @override
   String toString() => [name ?? 'undefined', '(${region.name})'].join(' ');
+
+  String toPrettifiedString({int? spacing}) {
+    return [
+      ticket.id.dim(),
+      ticket.verified ? '●' : '○',
+      name!.white().bold(),
+      '(${region.name})',
+    ].join(' ');
+  }
 }
