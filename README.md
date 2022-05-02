@@ -1,4 +1,4 @@
-![A thief](https://mario.wiki.gallery/images/thumb/2/2e/NSMBUDX_Nabbit.png/250px-NSMBUDX_Nabbit.png)
+<img src="https://user-images.githubusercontent.com/25728414/166330608-ed7740d9-91e6-4928-bdc5-270747409d47.png" align="right" alt="A thief" />
 
 # Nabbit
 
@@ -6,23 +6,9 @@ Download titles, updates and DLCs directly from Nintendo eShop. App requires tit
   
 > You can look up available key sites [here](https://titlekeys.ovh)
 
-```console
-$ nabbit search --query "mario" --region EUR
-0005000010106E00 ○ Super Mario Bros. (JPN)
-000500001010ED00 ● MARIO KART 8 (EUR)
-0005000010114300 ○ Mario & Yoshi (USA)
-0005000010145D00 ● SUPER MARIO 3D WORLD (USA)
-000500001014B800 ● New SUPER MARIO BROS. U (EUR)
-```
-
 ## Build
 
-You will need to install [Dart SDK](https://dart.dev/get-dart) to compile Nabbit from sources.
-
-```console
-$ dart pub get
-Got dependencies!
-```
+You will need to install [Dart](https://dart.dev/get-dart) to compile from sources.
 
 Compile standalone self-contained executable file:
 
