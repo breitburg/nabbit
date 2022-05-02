@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:nabbit/models/enum.dart';
 import 'package:nabbit/models/ticket.dart';
 import 'package:tint/tint.dart';

@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:args/command_runner.dart';
 import 'package:nabbit/models/enum.dart';
 import 'package:nabbit/models/storefront.dart';
-import 'package:nabbit/models/title.dart';
 
 class Search extends Command {
   final Storefront storefront;

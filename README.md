@@ -2,9 +2,10 @@
 
 # Nabbit
 
-Download titles, updates and DLCs directly from Nintendo eShop. App requires title keys site to run
-  
-> You can look up available key sites [here](https://titlekeys.ovh)
+Download titles, updates and DLCs directly from Nintendo eShop.
+Content can be installed on the console using any [WUP Installer](https://wiki.gbatemp.net/wiki/WUP_Installer) you have.
+
+> You can look up available key sites [here](https://titlekeys.ovh).
 
 ## Usage
 

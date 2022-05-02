@@ -10,6 +10,5 @@ dev_dependencies:
 
 dependencies: 
   args: ^2.3.0
-  dart_console: ^1.0.0
-  http: ^0.13.4
   tint: ^2.0.0
+  http: ^0.13.4

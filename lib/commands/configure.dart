@@ -14,13 +14,19 @@ class Configuration extends Command {
       ..addOption(
         'keys',
         abbr: 'k',
-        help: 'Titlekeys source URL',
+        help: 'Titlekeys source URL.',
         valueHelp: 'example.com',
         aliases: ['title-keys'],
+      )
+      ..addOption(
+        'cache',
+        abbr: 'c',
+        help: 'Cache file path.',
+        valueHelp: 'cache.yaml',
       );
   }
 
   void run() {
-    stdout.writeln('Reconfiguration complete!');
+    stdout.writeln('Configuration complete!');
   }
 }
