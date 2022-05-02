@@ -35,6 +35,6 @@ class Download extends Command {
     var title = storefront.get(arguments['id']);
     var output = arguments['output'];
 
-    stdout.writeln('Downloading ${title.name} to ${output}...');
+    stdout.writeln('Downloading ${title.name} to ${output}…');
   }
 }
